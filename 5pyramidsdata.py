@@ -20,12 +20,8 @@ else:
 try:
 	import requests
 except ImportError:
-	print R + '_     _'.center(44)
-	print "o' \.=./ `o".center(44)
-	print '(o o)'.center(44)
-	print 'ooO--(_)--Ooo'.center(44)
-	print W + ' '
-	print ('O S I F').center(44)
+	
+	print ('5pyramids').center(44)
 	print ' '
 	print "[!] Can't import module 'requests'\n"
 	sys.exit()
@@ -46,23 +42,14 @@ def baliho():
 		r = requests.get('https://graph.facebook.com/me?access_token=' + token)
 		a = json.loads(r.text)
 		name = a['name']
-		n.append(a['name'])
+		n.append(a['name']
 
-		print R + '_     _'.center(44)
-		print "o' \.=./ `o".center(44)
-		print '(o o)'.center(44)
-		print 'ooO--(_)--Ooo'.center(44)
-		print ' ' + W
+	
 		print ('[*] ' + name + ' [*]').center(44)
-		print ' '
 
 	except (KeyError,IOError):
-		print R + '_     _'.center(44)
-		print "o' \.=./ `o".center(44)
-		print '(o o)'.center(44)
-		print 'ooO--(_)--Ooo'.center(44)
-		print ' ' + W
-		print ('O S I F').center(44)
+		
+		print ('5pyramids').center(44)
 		print (W + '     [' + G +'Open Source Information Facebook'+ W + ']')
 		print ' '
 ####################################################################
